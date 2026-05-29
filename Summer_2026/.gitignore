@@ -1,0 +1,14 @@
+#environments
+venv/
+env/
+.env
+
+#python
+__pycache__/
+*.pyc
+
+#databases
+*.sqlite3
+
+#osgeneratedfiles
+.DS_Store
