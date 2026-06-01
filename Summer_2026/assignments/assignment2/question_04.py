@@ -4,7 +4,11 @@ def findduplicate(arr1):
     for items in arr1:
         duplicates[items] = duplicates.get(items,0)+1
     
-    return {key: count for key, count in duplicates.items() if count > 1}
+    for key,value in duplicates.items():
+        if value>1:
+            print(key)
+        
+            
         
     #duplicates = []
     # for i in range(len(arr1)):
@@ -17,5 +21,5 @@ def findduplicate(arr1):
 # create new array and add only duplicate elements
 
 numbers = [1, 2, 3, 2, 4, 5, 1, 6,6,6,6,6,6,6]
-print(findduplicate(numbers))
+(findduplicate(numbers))
                 
