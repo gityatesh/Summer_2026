@@ -39,10 +39,40 @@ class bst:
         self.postorder(root.right)
         print(root.data)
         
+    #finding max and min    
+    def findmin(self, currentroot):
+        if currentroot == None:
+            return 'tree is empty'
+        while currentroot !=None:
+            currentroot = currentroot.left
+        return currentroot.data   
+     
+    def findmax(self, currentroot):
+        if currentroot == None:
+            return 'tree is empty'
+        while currentroot !=None:
+            currentroot = currentroot.right
+        return currentroot.data       
+        
+        
+    #finding a value in a tree
+    def findaroot(self, currentroot, key):
+        if currentroot == None:
+            return 'tree is empty'
+        
+        if currentroot.data == key:
+            return f'value found in tree'
+        while currentroot.data<key:
+            currentroot = self.findaroot(currentroot.right, key)
+        while currentroot.data>key:
+            currentroot = self.findaroot(currentroot.left, key)
+        else: return 'no such root with value {key} is found'
+             
+        
         
 if __name__ == "__main__":
-    tree = bst()
-    tree.root = tree.insertelement(tree.root, 10)
+    tree = bst()#this command creates a new tree
+    tree.root = tree.insertelement(tree.root, 10)#using the current node of the tree we'll insert another node in the treewith different value
     tree.root = tree.insertelement(tree.root, 20)
     tree.root = tree.insertelement(tree.root, 4378)
     tree.root = tree.insertelement(tree.root, 187)
