@@ -1,0 +1,2 @@
+values = [2, -1, 4, -5, 6, -3]
+print(sorted(values))
