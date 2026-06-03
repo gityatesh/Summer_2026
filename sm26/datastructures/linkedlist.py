@@ -2,6 +2,7 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+        self.prev = None
 
 class linkedlist:
     def __init__(self):
@@ -26,7 +27,7 @@ class linkedlist:
         
     def insertatpos(self, value, pos):
         newnode = Node(value)
-        
+    
         if pos == 1:
             newnode.next = self.head
             self.head = newnode 
@@ -47,6 +48,19 @@ class linkedlist:
             
         newnode.next = temp.next
         temp.next = newnode
+        
+    def insertaftervalue(self, value, insert_after_value):
+        newnode = Node(value)
+        temp = self.head
+        while temp.data!= insert_after_value and temp!=None:
+            temp = temp.next
+            
+        if temp == None:
+            print('value not in list')
+            return
+        
+        newnode.next = temp.next
+        temp.next=newnode
         
     # deletion
     def deleteathead(self):
@@ -96,11 +110,12 @@ class linkedlist:
     def showlinkedlist(self):
         temp = self.head
         
-        while temp != None:
-            print(f"{temp.data}")
-            temp = temp.next 
-        print("None")
-
+        while temp.next != None:
+            print(f"{temp.data}->", end='')
+            temp = temp.next
+            if temp.next == None:
+                print(f"{temp.data}")
+                 
 
 
 if __name__ == "__main__":

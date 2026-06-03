@@ -20,13 +20,15 @@ class queue:
         self.rear +=1
         self.ourqueue[self.rear] = value
         
-    def deque(self, value):
+    def dequeue(self):
         if self.isempty():
             return 'queue underflow'
         if self.isfull():
             self.front=self.rear=-1
             
-        else: self.front +=1
+        else:
+            print(self.ourqueue[self.front]) 
+            self.front +=1
         
         
     def showqueue(self):

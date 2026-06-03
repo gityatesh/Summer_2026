@@ -1,4 +1,4 @@
-message = "aaabbbbccddeeeeejhgce"
+message = "aaabbbbccddeeeaeejhgce"
 freq = {}
 for char in message:
     freq[char] = freq.get(char, 0) +1

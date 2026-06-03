@@ -27,7 +27,7 @@ class stack:
             print('stack already empty')
             return
         else:
-            print(self.ourarr[self.top]) 
+            # print(self.ourarr[self.top]) 
             self.top -=1
             
     def peek(self):
