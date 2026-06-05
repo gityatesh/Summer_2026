@@ -1,0 +1,1 @@
+[[1, 1, "Rahul", "Food", 200], [2, 2, "Aman", "Travel", 500], [3, 1, "Rahul", "Food", 150], [4, 3, "Neha", "Shopping", 1200], [5, 2, "Aman", "Travel", 300], [6, 4, "Karan", "Food", 400], [7, 3, "Neha", "Shopping", 800], [8, 1, "Rahul", "Travel", 250], [9, 5, "Yatesh", "Travel", 25000], [10, 5, "Yatesh", "Food", 2000]]
