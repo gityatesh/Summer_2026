@@ -1,0 +1,11 @@
+ Total Customers: 4
+
+Total Transactions: 8
+
+Total Revenue: 3800
+
+Highest Spender: 3
+
+Lowest Spender: 4
+
+Popular Catagory: Shopping

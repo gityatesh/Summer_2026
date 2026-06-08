@@ -1,0 +1,10 @@
+[
+  {"transaction_id": 1, "customer_id": 1, "customer_name": "Rahul", "category": "Food", "amount": 200},
+  {"transaction_id": 2, "customer_id": 2, "customer_name": "Aman", "category": "Travel", "amount": 500},
+  {"transaction_id": 3, "customer_id": 1, "customer_name": "Rahul", "category": "Food", "amount": 150},
+  {"transaction_id": 4, "customer_id": 3, "customer_name": "Neha", "category": "Shopping", "amount": 1200},
+  {"transaction_id": 5, "customer_id": 2, "customer_name": "Aman", "category": "Travel", "amount": 300},
+  {"transaction_id": 6, "customer_id": 4, "customer_name": "Karan", "category": "Food", "amount": 400},
+  {"transaction_id": 7, "customer_id": 3, "customer_name": "Neha", "category": "Shopping", "amount": 800},
+  {"transaction_id": 8, "customer_id": 1, "customer_name": "Rahul", "category": "Travel", "amount": 250}
+]

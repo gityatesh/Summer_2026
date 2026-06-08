@@ -1,0 +1,33 @@
+Report name: Individual ExpenseReport name: Individual ExpenseReport name: Individual Expense{
+    "Rahul": 600,
+    "Aman": 800,
+    "Neha": 2000,
+    "Karan": 400
+}
+Report name: Categorywise Report{
+    "Food": 750,
+    "Travel": 1050,
+    "Shopping": 2000
+}
+Report name: Individual Expense{
+    "Rahul": 600,
+    "Aman": 800,
+    "Neha": 2000,
+    "Karan": 400
+}
+Report name: Categorywise Report{
+    "Food": 750,
+    "Travel": 1050,
+    "Shopping": 2000
+}
+Report name: Individual Expense{
+    "Rahul": 600,
+    "Aman": 800,
+    "Neha": 2000,
+    "Karan": 400
+}
+Report name: Categorywise Report{
+    "Food": 750,
+    "Travel": 1050,
+    "Shopping": 2000
+}
