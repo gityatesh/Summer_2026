@@ -23,7 +23,7 @@ def run_application():
     # 3. Test the connection 
     while True:
             
-            print("\n===== RETAIL STORE MENU =====")
+            print("\n_______RETAIL STORE MENU________")
             print("1. View Customer Spending Report")
             print("2. View Category Sales Report")
             print("3. Search Customer Transactions")
@@ -50,7 +50,7 @@ def run_application():
                 if cust_transactions:
                     print(f'Transactions for customer ID: {cust_id}')
                     for t in cust_transactions:
-                        print(f'Transaction ID: {t.transaction_id}| Category: {t.category}| Amount Spent: {t.amount}')
+                        print(f'Transaction ID: {t.transaction_id}| Name: {t.customer_name}| Category: {t.category}| Amount Spent: {t.amount}')
 
             elif choice == 4:
                 rankedcustomers = customer_service.get_customer_ranking()
