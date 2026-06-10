@@ -1,9 +1,5 @@
 #  Technical Concepts & Algorithmic Problem Solving
 
-This repository contains my reflections and solutions for various technical challenges spanning Algorithmic Optimization, Database Strategy (SQL), and Time/Space Complexity Analysis. 
-
-Below is a breakdown of the core concepts and optimal solutions for each problem set.
-
 ---
 
 ##  Section A: Algorithmic Optimization

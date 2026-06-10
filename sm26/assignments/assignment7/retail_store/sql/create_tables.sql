@@ -1,12 +1,11 @@
-CREATE TABLE IF NOT EXISTS customers(
-    id SERIAL PRIMARY KEY,
-    customer_name VARCHAR(50)
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS transactions(
-    id SERIAL PRIMARY KEY,
-    customer_id INTEGER,
-    category VARCHAR(50),
-    amount INTEGER,
-    FOREIGN KEY (customer_id) REFERENCES customers(id)
+CREATE TABLE transactions (
+    transaction_id INT PRIMARY KEY,
+    customer_id INT REFERENCES customers(customer_id),
+    category VARCHAR(50) NOT NULL,
+    amount INT NOT NULL
 );
