@@ -70,11 +70,9 @@ def run_application():
                 total_cust = len(customer_service.get_customer_spending())
                 total_transactions = len(transactions)
                 total_revenue = sum(t.amount for t in transactions)
-                
                 ranked = customer_service.get_customer_ranking()
                 higest_spender = ranked[0][0][0] if ranked else 'N.A.'
                 lowest_spender = ranked[-1][0][0] if ranked else 'N.A.'
-                
                 category_dict = customer_service.get_category_sales()
                 popular_category = max(category_dict, key = category_dict.get)
                 
