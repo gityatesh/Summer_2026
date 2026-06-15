@@ -21,4 +21,14 @@ print(df)
 # print(df[['Symbol', 'Price']])
 
 #to get our desired sector
-print(df[df['Sector']=='Techonology'])
+expensive_tech = df[(df['Sector'] == 'Technology') & (df['Price'] > 2000)]
+print('expensive tech: ')
+print(expensive_tech)
+df.describe()
+
+print("\n--- SLICING WITH iLoc (Rows 0-2, Columns 0-2) ---")
+# df.iloc[row_start:row_end, col_start:col_end]
+print(df.iloc[0:3, 0:2]) 
+
+print("\n--- SLICING WITH Loc (Rows 0-2, specific column names) ---")
+print(df.loc[0:3, ['Symbol', 'Volume']])#it stops on 2 only because loc works on the codn that a name should be given
